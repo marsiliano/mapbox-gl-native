@@ -164,7 +164,7 @@ typedef NS_ENUM(NSInteger, MBXSettingsMiscellaneousRows) {
     [self restoreState:nil];
 
     self.debugLoggingEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:@"MGLMapboxMetricsDebugLoggingEnabled"];
-    self.mapView.scaleBar.hidden = NO;
+    self.mapView.showsScale = YES;
     self.mapView.showsUserHeadingIndicator = YES;
     self.hudLabel.hidden = YES;
     if ([UIFont respondsToSelector:@selector(monospacedDigitSystemFontOfSize:weight:)]) {
